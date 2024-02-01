@@ -7,7 +7,6 @@ type Props = {
     setImage: (image:string | null) => void;
 }
 
-
 export function ImageMagnifier({ image, setImage }: Props) {
     const [background, setBackground] = useState<"blur" | "dark">("blur");
     const [imageWidth, setImageWidth] = useState<number>(100);
